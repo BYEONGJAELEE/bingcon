@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F7DE73"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="15dp" >
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="200dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/bibi" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp" >
+
+                    <EditText
+                        android:id="@+id/nameEdit"
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/editer_selector"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="이름"
+                        android:inputType="text"
+                        android:maxLength="10" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp" >
+
+                    <EditText
+                        android:id="@+id/idEdit"
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/editer_selector"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="아이디"
+                        android:inputType="text"
+                        android:maxLength="20" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="10dp" >
+
+                    <EditText
+                        android:id="@+id/passwordEdit"
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/editer_selector"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="비밀번호"
+                        android:inputType="textPassword"
+                        android:maxLength="10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="10dp" >
+
+                    <EditText
+                        android:id="@+id/emailEdit"
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/editer_selector"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="이메일"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="30" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="10dp" >
+
+                    <TextView
+                        android:id="@+id/moduleID"
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/editer_selector"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="비콘탐지를 눌러주세요" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#4DAA79"
+                        android:textSize="17dp"
+                        android:text="자전거사진" />
+
+                    <Button
+                        android:id="@+id/btn_select_gallery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image"
+                        android:paddingTop="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#4DAA79"
+                        android:textSize="17dp"
+                        android:text="미리보기" 
+                        android:paddingTop="5dp"/>
+
+                    <ImageView
+                        android:id="@+id/photoEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="30dp" >
+
+                    <Button
+                        android:id="@+id/joinOkBtn"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:background="#4DAA79"
+                        android:text="가입" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
+
+                    <Button
+                        android:id="@+id/joinCancelBtn"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:background="#4DAA79"
+                        android:text="취소" />
+                    
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
+                    
+                    <Button
+                        android:id="@+id/module"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:background="#4DAA79"
+                        android:text="비콘탐지"/>
+                    <Button
+                        android:id="@+id/pushRegisterBtn"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:background="#4DAA79"
+                        android:visibility="gone"
+                        android:text="푸시" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</FrameLayout>

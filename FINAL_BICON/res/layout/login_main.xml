@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F6DE70"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="0dp" >
+
+        <ImageView
+            android:id="@+id/Image1"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="top|center"
+            android:src="@drawable/bicon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/login" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/user_id"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:hint="아이디"
+                android:inputType="text"
+                android:maxLength="10" />
+
+            <EditText
+                android:id="@+id/user_pw"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:hint="비밀번호"
+                android:inputType="textPassword"
+                android:maxLength="10" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:paddingTop="140dp" >
+        
+         <Button
+            android:id="@+id/btn_join"
+            android:layout_width="280px"
+            android:layout_height="60px"
+            android:background="@drawable/join" />
+
+    </LinearLayout>
+
+</LinearLayout>

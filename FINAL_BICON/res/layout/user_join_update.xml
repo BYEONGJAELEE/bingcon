@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F7DE73"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="15dp" >
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="200dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/bibi" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp" >
+
+                    <TextView
+                        android:id="@+id/nameTextView"
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/editer_selector"
+                        android:ems="10"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp" >
+
+                    <TextView
+                        android:id="@+id/idTextView"
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/editer_selector"
+                        android:ems="10"
+                        android:gravity="center" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="10dp" >
+
+                    <TextView
+                        android:id="@+id/emailTextView"
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/editer_selector"
+                        android:ems="10"
+                        android:gravity="center" />
+
+                    <EditText
+                        android:id="@+id/emailEditText"
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/editer_selector"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="이메일"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="30"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="10dp" >
+
+                    <TextView
+                        android:id="@+id/moduleIDTextView"
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/editer_selector"
+                        android:ems="10"
+                        android:gravity="center" />
+
+                    <EditText
+                        android:id="@+id/moduleIDEditText"
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/editer_selector"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="모듈아이디"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp" >
+
+                    <Button
+                        android:id="@+id/updateOkBtn"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:background="#4DAA79"
+                        android:text="수정" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3" >
+        </fragment>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/bikeMapBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bikemap" />
+
+            <Button
+                android:id="@+id/apMapBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AP찾기" />
+
+            <Button
+                android:id="@+id/reloadBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="새로고침"
+                android:textSize="16dp" />
+	        <Button
+	          android:id="@+id/myGPSBtn"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:text="내위치" />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/modSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_below="@+id/linearLayout1"
+            android:textOn="Park" />
+</RelativeLayout>
+
+    <TextView
+        android:id="@+id/text01"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:scrollHorizontally="true"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="16dp" />
+
+</LinearLayout>
